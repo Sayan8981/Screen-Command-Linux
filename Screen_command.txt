@@ -1,0 +1,39 @@
+10 Screen Command Examples to Manage Linux Terminals
+
+Screen is a full-screen software program that can be used to multiplexes a physical console between several processes (typically interactive shells). It offers a user to open several separate terminal instances inside a one single terminal window manager.
+
+The screen application is very useful, if you are dealing with multiple programs from a command line interface and for separating programs from the terminal shell. It also allows you to share your sessions with others users and detach/attach terminal sessions.
+
+# apt-get install screen (On Debian based Systems)
+
+Start screen for the first time
+
+Just type screen at the command prompt. Then the screen will show with interface exactly as the command prompt.
+
+pungki@mint ~ $ screen
+
+Show screen parameter
+
+Type “Ctrl-A” and “?” without quotes. Then you will see all commands or parameters on screen.
+
+To get out of the help screen, you can press “space-bar” button or “Enter“. (Please note that all shortcuts which use “Ctrl-A” is done without quotes).
+
+Re-attach the screen
+
+pungki@mint ~ $ screen -r
+
+Use screen -ls to see how many screen are available.
+
+pungki@mint ~ $ screen -ls
+
+Switching between screens
+
+When you do nested screen, you can switch between screen using command “Ctrl-A” and “n“. It will be move to the next screen. When you need to go to the previous screen, just press “Ctrl-A” and “p“.
+
+To create a new screen window, just press “Ctrl-A” and “c“.
+
+Leaving Screen
+
+There are 2 (two) ways to leaving the screen. First, we are using “Ctrl-A” and “d” to detach the screen. Second, we can use the exit command to terminating screen. You also can use “Ctrl-A” and “K” to kill the screen.
+
+That’s some of screen usage on daily basis. There are still a lot of features inside the screen command. You may see screen man page for more detail.
